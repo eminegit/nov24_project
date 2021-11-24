@@ -20,6 +20,12 @@ def convert_temp(f):
     return float(celcius)
 
 
+def sales_tax(input):
+    sales_tax = (8.875/100) * (input)
+    return sales_tax
+
+
+
 if __name__ == '__main__':
     # print_hi('PyCharm')
     # compute_area()
@@ -27,8 +33,10 @@ if __name__ == '__main__':
     # print("my age is {}.".format(my_value))
 
     result = convert_temp(90)
-    print(result)
+#    print(result)
 
+    print(round(sales_tax(100),2))
+    print(round(5.51423, 2))
 
 
 
